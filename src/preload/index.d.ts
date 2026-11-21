@@ -1,8 +1,8 @@
-import type { PhoneMirorApi } from '../shared/types'
+import type { MirraApi } from '../shared/types'
 
 declare global {
   interface Window {
-    phonemiror: PhoneMirorApi
+    mirra: MirraApi
   }
 }
 

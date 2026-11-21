@@ -3,7 +3,7 @@ import type { ReceiverStatus, Settings } from '@shared/types'
 import { Icon, type IconName } from '../components/Icon'
 import { PhoneVisual } from '../components/PhoneVisual'
 
-const api = window.phonemiror
+const api = window.mirra
 
 const HEADLINE: Record<ReceiverStatus['state'], { title: string; sub: string }> = {
   stopped: { title: 'שקף את האייפון שלך למחשב', sub: 'הפעל את המקלט, והמחשב יופיע ברשימת "שיקוף מסך" באייפון.' },

@@ -3,7 +3,7 @@ import type { CheckId, DependencyCheck } from '@shared/types'
 import { Icon } from '../components/Icon'
 import { LINKS } from '../strings'
 
-const api = window.phonemiror
+const api = window.mirra
 
 const INFO: Record<CheckId, { title: string; why: string; link: string; cta: string }> = {
   uxplay: {

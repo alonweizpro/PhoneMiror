@@ -23,7 +23,7 @@ export class AirPlayReceiver extends EventEmitter {
   private status: ReceiverStatus = {
     state: 'stopped',
     platform: 'ios',
-    receiverName: 'PhoneMiror',
+    receiverName: 'Mirra',
     demo: false
   }
 

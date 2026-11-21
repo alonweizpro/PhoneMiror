@@ -1,6 +1,6 @@
 {
-  "name": "phonemiror",
-  "productName": "PhoneMiror",
+  "name": "mirra",
+  "productName": "Mirra",
   "version": "0.1.0",
   "description": "Mirror your iPhone screen to your Windows PC (Android coming soon)",
   "main": "./out/main/index.js",
@@ -30,8 +30,8 @@
     "vite": "^5.4.11"
   },
   "build": {
-    "appId": "com.alonweizpro.phonemiror",
-    "productName": "PhoneMiror",
+    "appId": "com.alonweizpro.mirra",
+    "productName": "Mirra",
     "directories": {
       "output": "release"
     },

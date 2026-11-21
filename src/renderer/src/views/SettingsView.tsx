@@ -2,7 +2,7 @@ import { useEffect, useState, type ReactNode } from 'react'
 import type { Resolution, Settings } from '@shared/types'
 import { Icon } from '../components/Icon'
 
-const api = window.phonemiror
+const api = window.mirra
 
 export function SettingsView({ running }: { running: boolean }) {
   const [s, setS] = useState<Settings | null>(null)
@@ -41,7 +41,7 @@ export function SettingsView({ running }: { running: boolean }) {
             value={s.receiverName}
             maxLength={40}
             onChange={(e) => setS({ ...s, receiverName: e.target.value })}
-            onBlur={(e) => update({ receiverName: e.target.value.trim() || 'PhoneMiror' })}
+            onBlur={(e) => update({ receiverName: e.target.value.trim() || 'Mirra' })}
           />
         </Row>
         <Row label="מסך מלא" hint="פתח את חלון השיקוף במסך מלא">

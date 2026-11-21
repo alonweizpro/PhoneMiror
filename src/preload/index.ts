@@ -1,5 +1,5 @@
 import { contextBridge, ipcRenderer, type IpcRendererEvent } from 'electron'
-import type { LogEntry, PhoneMirorApi, ReceiverStatus } from '../shared/types'
+import type { LogEntry, MirraApi, ReceiverStatus } from '../shared/types'
 
 function subscribe<T>(channel: string, cb: (v: T) => void) {
   const listener = (_e: IpcRendererEvent, v: T) => cb(v)
@@ -7,7 +7,7 @@ function subscribe<T>(channel: string, cb: (v: T) => void) {
   return () => ipcRenderer.removeListener(channel, listener)
 }
 
-const api: PhoneMirorApi = {
+const api: MirraApi = {
   getStatus: () => ipcRenderer.invoke('receiver:getStatus'),
   start: (opts) => ipcRenderer.invoke('receiver:start', opts),
   stop: () => ipcRenderer.invoke('receiver:stop'),
@@ -25,4 +25,4 @@ const api: PhoneMirorApi = {
   onLog: (cb) => subscribe<LogEntry>('receiver:log', cb)
 }
 
-contextBridge.exposeInMainWorld('phonemiror', api)
+contextBridge.exposeInMainWorld('mirra', api)

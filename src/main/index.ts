@@ -22,7 +22,8 @@ function createWindow() {
     minHeight: 600,
     frame: false,
     backgroundColor: '#0a0b10',
-    title: 'PhoneMiror',
+    title: 'Mirra',
+    icon: path.join(app.getAppPath(), 'resources', 'icon.png'),
     show: false,
     webPreferences: {
       preload: path.join(__dirname, '../preload/index.js'),

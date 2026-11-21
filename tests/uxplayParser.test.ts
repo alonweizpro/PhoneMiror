@@ -47,7 +47,7 @@ test('blank lines produce nothing', () => {
 })
 
 test('default args', () => {
-  assert.deepEqual(buildUxPlayArgs(DEFAULT_SETTINGS), ['-n', 'PhoneMiror', '-nh', '-s', '1920x1080', '-fps', '60', '-vs', 'd3d11videosink'])
+  assert.deepEqual(buildUxPlayArgs(DEFAULT_SETTINGS), ['-n', 'Mirra', '-nh', '-s', '1920x1080', '-fps', '60', '-vs', 'd3d11videosink'])
 })
 
 test('args for audio off, fullscreen, fixed pin, debug', () => {

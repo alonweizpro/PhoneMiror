@@ -1,8 +1,8 @@
-# PhoneMiror
+# Mirra
 
 שיקוף מסך האייפון למחשב Windows, אלחוטית, דרך AirPlay. תמיכה באנדרואיד תגיע בהמשך.
 
-![PhoneMiror בזמן שיקוף](docs/screenshot-mirroring.png)
+![Mirra בזמן שיקוף](docs/screenshot-mirroring.png)
 
 | ממתין לחיבור | בדיקת מערכת | הגדרות |
 | --- | --- | --- |
@@ -10,15 +10,15 @@
 
 ## איך זה עובד
 
-האייפון יודע לשקף מסך רק דרך AirPlay. PhoneMiror הופך את המחשב ל"מקלט AirPlay":
+האייפון יודע לשקף מסך רק דרך AirPlay. Mirra הופך את המחשב ל"מקלט AirPlay":
 
 ```
 iPhone ──(Wi‑Fi, AirPlay)──► UxPlay (מנוע הקליטה) ──► GStreamer (מפענח ומציג וידאו)
                                    ▲
-                    PhoneMiror (Electron + React) – ממשק, הגדרות, סטטוס, יומן
+                    Mirra (Electron + React) – ממשק, הגדרות, סטטוס, יומן
 ```
 
-- **UxPlay** – מנוע קוד פתוח שמממש את פרוטוקול AirPlay Mirroring. PhoneMiror מפעיל אותו כתהליך רקע, קורא את הפלט שלו ומתרגם אותו לסטטוס (ממתין, מחובר, משקף).
+- **UxPlay** – מנוע קוד פתוח שמממש את פרוטוקול AirPlay Mirroring. Mirra מפעיל אותו כתהליך רקע, קורא את הפלט שלו ומתרגם אותו לסטטוס (ממתין, מחובר, משקף).
 - **Bonjour** – שירות של Apple שבזכותו המחשב מופיע ברשימת "שיקוף מסך" באייפון.
 - **GStreamer** – מפענח את הווידאו ומציג אותו בחלון.
 
@@ -75,4 +75,4 @@ tests/                בדיקות יחידה
 
 ## רישיון
 
-UxPlay מופץ תחת GPL-3.0, ולכן גם PhoneMiror מופץ תחת **GPL-3.0-or-later**.
+UxPlay מופץ תחת GPL-3.0, ולכן גם Mirra מופץ תחת **GPL-3.0-or-later**.

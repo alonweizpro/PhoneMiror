@@ -8,7 +8,7 @@ export function buildUxPlayArgs(s: Settings): string[] {
   const args: string[] = []
 
   // -nh: don't append "@hostname" to the name shown on the iPhone
-  args.push('-n', s.receiverName.trim() || 'PhoneMiror', '-nh')
+  args.push('-n', s.receiverName.trim() || 'Mirra', '-nh')
 
   args.push('-s', s.resolution)
   args.push('-fps', String(s.fps))

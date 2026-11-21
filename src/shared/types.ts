@@ -60,7 +60,7 @@ export interface Settings {
 }
 
 export const DEFAULT_SETTINGS: Settings = {
-  receiverName: 'PhoneMiror',
+  receiverName: 'Mirra',
   resolution: '1920x1080',
   fps: 60,
   audio: true,
@@ -82,7 +82,7 @@ export interface DependencyCheck {
   detail?: string
 }
 
-export interface PhoneMirorApi {
+export interface MirraApi {
   getStatus(): Promise<ReceiverStatus>
   start(opts?: { demo?: boolean }): Promise<ReceiverStatus>
   stop(): Promise<ReceiverStatus>

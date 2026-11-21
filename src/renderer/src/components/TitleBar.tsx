@@ -1,16 +1,15 @@
 import type { ReceiverStatus } from '@shared/types'
 import { Icon } from './Icon'
 import { STATE_LABEL } from '../strings'
+import logo from '../assets/logo.png'
 
 export function TitleBar({ status }: { status: ReceiverStatus }) {
-  const w = window.phonemiror.window
+  const w = window.mirra.window
   return (
     <header className="titlebar">
       <div className="brand">
-        <span className="logo" aria-hidden>
-          <Icon name="cast" size={14} />
-        </span>
-        <span className="brand-name">PhoneMiror</span>
+        <img className="logo" src={logo} alt="" />
+        <span className="brand-name">Mirra</span>
         <span className={`pill pill-${status.state}`}>
           <span className="dot" />
           {STATE_LABEL[status.state]}

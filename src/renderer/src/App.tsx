@@ -7,7 +7,7 @@ import { SettingsView } from './views/SettingsView'
 import { LogsView } from './views/LogsView'
 import { SetupView } from './views/SetupView'
 
-const api = window.phonemiror
+const api = window.mirra
 
 export default function App() {
   const [view, setView] = useState<View>('home')
