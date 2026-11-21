@@ -1,0 +1,9 @@
+node_modules/
+out/
+release/
+dist/
+*.log
+.DS_Store
+# Binaries are downloaded/copied locally, not committed
+resources/bin/*
+!resources/bin/README.md
